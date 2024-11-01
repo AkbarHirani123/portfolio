@@ -19,9 +19,25 @@
   align-items: center;
 }
 
+.App-header.mobile > div {
+  width: 100vw;
+  justify-content: center;
+}
+
 .App-header > div {
   padding: 20px;
   display: flex;
+}
+
+.App-header > div.hide-on-mobile p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-header > div.hide-on-mobile {
+  flex-direction: column;
 }
 
 .App-header > div >div {
@@ -49,5 +65,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hide-on-mobile {
+    display: none !important;
   }
 }
