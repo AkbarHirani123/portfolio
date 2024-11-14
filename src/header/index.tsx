@@ -38,7 +38,7 @@ const Header = () => {
           console.log("Could not get user's IP. Error: ", error);
         });
     }
-  }, []);
+  });
   useEffect(() => {
     if (userInfo.lat !== "" && weather.temp === "") {
       console.log(userInfo);
@@ -62,7 +62,11 @@ const Header = () => {
     <div className={`App-header ${!mediaQuery600 && "mobile"}`}>
       <div>
         <div>
-          <a href="https://github.com/AkbarHirani123" target="_blank">
+          <a
+            href="https://github.com/AkbarHirani123"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <GithubLogo
               color="#282c34"
               weight="fill"
@@ -71,7 +75,11 @@ const Header = () => {
           </a>
         </div>
         <div>
-          <a href="https://github.com/AkbarHirani123" target="_blank">
+          <a
+            href="https://github.com/AkbarHirani123"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedinLogo
               color="#282c34"
               weight="fill"
@@ -80,7 +88,11 @@ const Header = () => {
           </a>
         </div>
         <div>
-          <a href="mailto:akbar.hirani123@gmail.com">
+          <a
+            href="mailto:akbar.hirani123@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <Envelope color="#282c34" size={mediaQuery600 ? 32 : 50} />
           </a>
         </div>
