@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./header";
@@ -18,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React With Akbar
         </a>
       </header>
     </div>
